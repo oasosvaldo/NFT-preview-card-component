@@ -1,0 +1,184 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Dark-blue-main: hsl(217, 54%, 11%);
+    --Dark-blue-card: hsl(216, 50%, 16%);
+    --Dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+body {
+    background: var(--Dark-blue-main);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: var(--Dark-blue-card);
+    color: var(--White);
+    width: 18rem;
+    border-radius: 15px;
+    padding: 1.3rem;
+}
+
+.card_view {
+    position: relative;
+}
+
+.card_nft-img {
+    width: 15.4rem;
+    height: 15.4rem;
+    border-radius: 8px;
+    display: block;
+}
+
+.card_view:hover .view_overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.view_overlay {
+    width: 15.4rem;
+    height: 15.4rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: hsla(178, 100%, 50%, 0.5);
+    opacity: 0;
+    transition: all .9s ease;
+}
+
+.card h1 {
+    margin: 1.2rem 0 0.8rem;
+    transition: all .9s ease;
+}
+
+h1 {
+    display: block;
+    font-size: 1.0rem;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;    
+    opacity: 1;
+    transition: all .9s ease;
+}
+
+h1:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+:-webkit-any(article, aside, nav, section) h1 {
+    font-size: 1.0em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.nft-heading {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+.card_details {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--Dark-blue-line);
+    font-size: .89rem;
+}
+
+.details_eth {
+    color: var(--Cyan);
+}
+
+.details_eth img {
+    vertical-align: middle;
+    margin-right: 4px;
+    width: 0.65rem
+rem
+;
+}
+
+.details_eth span {
+    vertical-align: middle;
+}
+
+.details_time img {
+    margin-right: 2px;
+    width: 0.9rem;
+    vertical-align: middle;
+}
+
+.details_time span {
+    vertical-align: middle;
+    color: var(--Soft-blue);
+}
+
+.card_creator {
+    display: flex;
+    align-items: center;
+    margin-top: 0.9rem;
+}
+
+.card_creator img {
+    width: 1.88rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.card_creator p {
+    font-size: .9rem;
+    margin-left: 1rem;
+}
+
+.card p {
+    color: var(--Soft-blue);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.card_creator span {
+    color: white;
+    transition: all .9s ease;
+    margin-left: 2px;
+}
+
+.card_creator span:hover{    
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+
+.card_eye-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+}
